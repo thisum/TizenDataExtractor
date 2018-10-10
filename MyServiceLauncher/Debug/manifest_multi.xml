@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<manifest xmlns="http://tizen.org/ns/packages" api-version="2.3.2" package="org.example.myservicelauncher" version="1.0.0">
+    <profile name="wearable"/>
+    <ui-application appid="org.example.myservicelauncher" exec="myservicelauncher" multiple="false" nodisplay="false" taskmanage="true" type="capp">
+        <label>myservicelauncher</label>
+        <icon>myservicelauncher.png</icon>
+        <metadata key="accessory-services-location" value="/res/xml/accessoryservices.xml"/>
+        <metadata key="launch-on-attach" value="false"/>
+    </ui-application>
+    <service-application appid="org.example.myservice" exec="myservice" multiple="false" nodisplay="true" taskmanage="false" type="capp">
+        <label>myservice</label>
+        <icon>myservice.png</icon>
+        <metadata key="accessory-services-location" value="/res/xml/accessoryservices.xml"/>
+        <metadata key="launch-on-attach" value="false"/>
+    </service-application>
+    <privileges>
+        <privilege>http://tizen.org/privilege/healthinfo</privilege>
+        <privilege>http://tizen.org/privilege/mediacontroller.client</privilege>
+        <privilege>http://tizen.org/privilege/appmanager.launch</privilege>
+        <privilege>http://tizen.org/privilege/internet</privilege>
+        <privilege>http://developer.samsung.com/tizen/privilege/accessoryprotocol</privilege>
+        <privilege>http://tizen.org/privilege/display</privilege>
+        <privilege>http://tizen.org/privilege/power</privilege>
+    </privileges>
+</manifest>

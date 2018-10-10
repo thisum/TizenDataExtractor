@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<application name="org.example.myservicelauncher">
+		<serviceProfile id="/sample/hellomessage" name="myservicelauncher"
+			role="consumer" version="1.0">
+			<supportedTransports>
+				<transport type="TRANSPORT_BT" />
+				<transport type="TRANSPORT_WIFI" />
+			</supportedTransports>
+			<supportedFeatures>
+				<feature type="message" />
+			</supportedFeatures>
+		</serviceProfile>
+	</application>
+</resources>
